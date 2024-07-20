@@ -2,7 +2,7 @@ import Logo from "../images/logo.png";
 import "../css/App.css";
 function Navbars() {
   return (
-    <nav class="bg-transparent fixed w-full z-20 top-0 start-0 py-3 px-3">
+    <nav class="bg-prim fixed w-full z-20 top-0 start-0 py-3 px-3">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="javascript:void(0" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={Logo} class="h-11" alt="Lavalette Logo" />
@@ -24,12 +24,12 @@ function Navbars() {
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
           <ul class="flex flex-col font-medium mt-4 border border-gray-100 rounded-lg md:space-x-3 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 px-3 py-3">
             <li>
-              <a href="#" class="block text-gray-900 hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
+              <a href="#" class="block text-white hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
                 Beranda
               </a>
             </li>
             <li>
-              <button id="dropdownprofileLink" data-dropdown-toggle="Profile" class="flex items-center justify-between w-full text-gray-900 hovver rounded md:p-0 md:w-auto">
+              <button id="dropdownprofileLink" data-dropdown-toggle="Profile" class="flex items-center justify-between w-full text-white hovver rounded md:p-0 md:w-auto">
                 Profile
                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -66,7 +66,7 @@ function Navbars() {
               </div>
             </li>
             <li>
-              <button id="dropdownlayananLink" data-dropdown-toggle="Layanan" class="flex items-center justify-between w-full text-gray-900 hovver rounded md:p-0 md:w-auto">
+              <button id="dropdownlayananLink" data-dropdown-toggle="Layanan" class="flex items-center justify-between w-full text-white hovver rounded md:p-0 md:w-auto">
                 Layanan
                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -108,7 +108,7 @@ function Navbars() {
               </div>
             </li>
             <li>
-              <button id="dropdownCentreLink" data-dropdown-toggle="Centerofexcellence" class="flex items-center justify-between w-full text-gray-900 hovver rounded md:p-0 md:w-auto">
+              <button id="dropdownCentreLink" data-dropdown-toggle="Centerofexcellence" class="flex items-center justify-between w-full text-white hovver rounded md:p-0 md:w-auto">
                 Center Of Excellence
                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -145,24 +145,24 @@ function Navbars() {
               </div>
             </li>
             <li>
-              <a href="#" class="block text-gray-900 hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
+              <a href="#" class="block text-white hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
                 Dokter Kami
               </a>
             </li>
             <li>
-              <a href="#" class="block text-gray-900 hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
+              <a href="#" class="block text-white hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
                 Artikel
               </a>
             </li>
             <li>
-              <button id="dropdownMediaLink" data-dropdown-toggle="Media" class="flex items-center justify-between w-full text-gray-900 hovver rounded md:p-0 md:w-auto">
+              <button id="dropdownMediaLink" data-dropdown-toggle="Media" class="flex items-center justify-between w-full text-white hovver rounded md:p-0 md:w-auto">
                 Media
                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
               </button>
               <div id="Media" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm text-gray-900 hovver dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <ul class="py-2 text-sm text-white hovver dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                       Gallery
@@ -182,7 +182,7 @@ function Navbars() {
               </div>
             </li>
             <li>
-              <a href="#" class="block text-gray-900 hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
+              <a href="#" class="block text-white hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
                 Layanan Pelanggan
               </a>
             </li>
