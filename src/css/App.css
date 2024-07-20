@@ -43,10 +43,16 @@ body {
 .hovver {
   padding: 7px 15px 7px 15px;
   border-radius: 500px;
+  border: 1px solid #113d3c;
 }
 
 .hovver:hover {
-  background-color: #f4f4f4;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
   border-radius: 500px;
 }
 
@@ -63,6 +69,8 @@ body {
   }
   .second {
     width: auto !important;
+    height: 160px !important;
+    border-radius: 15px;
   }
 }
 /* modeMobile */
@@ -79,11 +87,16 @@ body {
   }
   .second {
     width: auto !important;
+    height: 125px !important;
+    border-radius: 15px;
   }
 }
 
 .bg-prim {
   background-color: #113d3c;
+}
+.bg-img {
+  background-image: url("../images/background1.png");
 }
 .text-prim {
   color: #113d3c;
@@ -93,11 +106,41 @@ body {
 }
 .utama {
   height: 300px !important;
-  background-color: red;
-  border-radius: 25px;
+  margin-bottom: 60px;
 }
+.utama iframe {
+  border-radius: 25px;
+  width: 600px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes slideBackground {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.prio {
+  padding: 8px 10px;
+  border-radius: 10px;
+  width: 345px;
+  background-image: linear-gradient(90deg, #3ab449, #4caf50);
+  background-size: 200% 100%; /* Make sure the background is larger than the element */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  animation: slideBackground 3s linear infinite;
+}
+
 .second {
-  height: 160px !important;
-  background-color: red;
-  border-radius: 15px;
+  background-color: #fff;
+}
+.Doctor {
+  justify-content: end;
+  align-items: end;
+  margin-left: 50px;
+  width: 500px;
+  margin-top: -3px;
 }
