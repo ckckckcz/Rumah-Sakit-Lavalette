@@ -2,6 +2,7 @@ import "../css/App.css";
 import Doctor1 from "../images/doctor1.png";
 import Doctor2 from "../images/doctor2.png";
 import Doctor3 from "../images/doctor3.png";
+import Thumbnail from "../images/thumbnail.jpg";
 import React, { useEffect, useState } from "react";
 
 const Jumbotron = () => {
@@ -9,9 +10,9 @@ const Jumbotron = () => {
   const [penghargaanCount, setPenghargaanCount] = useState(0);
   const [dokterCount, setDokterCount] = useState(0);
 
-  const targetMelayani = 106;
-  const targetPenghargaan = 26;
-  const targetDokter = 84;
+  const targetMelayani = 80;
+  const targetPenghargaan = 18;
+  const targetDokter = 90;
   const duration = 8000; // duration of the animation in milliseconds
   const interval = duration / Math.max(targetMelayani, targetPenghargaan, targetDokter); // interval time
 
@@ -49,7 +50,7 @@ const Jumbotron = () => {
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div className="flex flex-col justify-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl gap-2">
-            Kepuasan dan Keselamatan Anda adalah <p className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl prio">Prioritas Kami</p>
+            Kesehatan dan Keselamatan Anda adalah <p className="text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl prio">Prioritas Kami</p>
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-400 lg:text-xl">
             Kami memberikan pelayanan kesehatan unggul dengan fokus pada kebutuhan pasien dan keluarga. Didukung oleh teknologi canggih, edukasi, serta tenaga kesehatan berpengalaman dan profesional untuk memberikan pengalaman terbaik bagi
@@ -68,16 +69,7 @@ const Jumbotron = () => {
         </div>
         <div className="sidePages sm:hidden lg:block hidden">
           <div className="utama relative">
-            <iframe
-              width="713"
-              height="315"
-              src="https://www.youtube.com/embed/afy_Hs_qCq8"
-              title="Rumah Sakit Lavalette Malang"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+            <img src={Thumbnail} />
           </div>
 
           <div className="gap-2 grid grid-cols-3">

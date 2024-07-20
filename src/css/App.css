@@ -72,6 +72,19 @@ body {
     height: 160px !important;
     border-radius: 15px;
   }
+  .logo {
+    width: 155px;
+    height: auto;
+  }
+  .prio {
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 345px;
+    background-image: linear-gradient(90deg, #3ab449, #4caf50);
+    background-size: 200% 100%; /* Make sure the background is larger than the element */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    animation: slideBackground 3s linear infinite;
+  }
 }
 /* modeMobile */
 @media (max-width: 1025px) {
@@ -90,10 +103,26 @@ body {
     height: 125px !important;
     border-radius: 15px;
   }
+  .logo {
+    width: 125px;
+    height: auto;
+  }
+  .prio {
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 265px;
+    background-image: linear-gradient(90deg, #3ab449, #4caf50);
+    background-size: 200% 100%; /* Make sure the background is larger than the element */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    animation: slideBackground 3s linear infinite;
+  }
 }
 
 .bg-prim {
   background-color: #113d3c;
+}
+.bg-prim2 {
+  background-color: #3ab449;
 }
 .bg-img {
   background-image: url("../images/background1.png");
@@ -108,12 +137,13 @@ body {
   height: 300px !important;
   margin-bottom: 60px;
 }
-.utama iframe {
+.utama img {
   border-radius: 25px;
   width: 600px;
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 @keyframes slideBackground {
   0% {
@@ -122,16 +152,6 @@ body {
   100% {
     background-position: 0 0;
   }
-}
-
-.prio {
-  padding: 8px 10px;
-  border-radius: 10px;
-  width: 345px;
-  background-image: linear-gradient(90deg, #3ab449, #4caf50);
-  background-size: 200% 100%; /* Make sure the background is larger than the element */
-  background-repeat: no-repeat; /* Prevent background from repeating */
-  animation: slideBackground 3s linear infinite;
 }
 
 .second {
