@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.hovver {
+  padding: 12px;
+  border-radius: 500px;
+}
+
+.hovver:hover {
+  background-color: #f4f4f4;
+  border-radius: 500px;
+}
