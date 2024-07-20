@@ -5,7 +5,7 @@ function Navbars() {
     <nav class="bg-transparent fixed w-full z-20 top-0 start-0 py-3 px-3">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="javascript:void(0" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={Logo} class="h-12" alt="Lavalette Logo" />
+          <img src={Logo} class="h-11" alt="Lavalette Logo" />
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
@@ -22,7 +22,7 @@ function Navbars() {
           </button>
         </div>
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul class="flex flex-col font-medium mt-4 border border-gray-100 rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 px-3 py-3">
+          <ul class="flex flex-col font-medium mt-4 border border-gray-100 rounded-lg md:space-x-3 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 px-3 py-3">
             <li>
               <a href="#" class="block text-gray-900 hovver bg-blue-700 rounded md:bg-transparent md:p-0 md:dark:bg-transparent" aria-current="page">
                 Beranda
